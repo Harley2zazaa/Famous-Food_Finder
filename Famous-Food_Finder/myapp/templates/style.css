@@ -22,11 +22,14 @@
 .page-text{
     width: 400px;
     height: 80px;
+    color: rgb(216, 132, 13);
     background-color: #ffffff;
     text-align: center;
     border-radius: 15px;
     margin: 20vh auto 0;
-    box-shadow: 4px 4px 5px peru;
+    box-shadow: 
+    0px 4px rgb(251, 207, 150),
+    0px 6px 10px 1px peru;
 }
 
 .search-box{
