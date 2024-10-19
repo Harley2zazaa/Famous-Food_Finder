@@ -16,6 +16,9 @@
     background-color: #ffffff;
     overflow: hidden;
     width: 100vw;
+    box-shadow:
+    0px 4px #ff9f1c,
+    0px 6px 10px 1px peru;
 }
 
 .top-nav a {
@@ -109,6 +112,22 @@
   }
   
 
-.random-box{
+.rand-button{
+    width: 90px;
+    height: 20px;
     margin-top: 15px;
+    background-color: #ffffff;
+    cursor: pointer;
+    font-size: x-small;
+    color: #b1a9a0;
+    border: solid rgb(255, 255, 255);
+    border-radius: 17px;
+    box-shadow:
+    0px 4px rgb(251, 207, 150),
+    0px 6px 10px 1px peru;
+}
+
+.rand-button:active{
+  transform: scale(0.90);
+  transition: all 0.25s cubic-bezier(0.19, 1, 0.22, 1);
 }
