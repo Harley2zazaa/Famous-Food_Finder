@@ -12,7 +12,7 @@
 </head>
 
 <body class="body">
-    <div class="top-nav"> <!-- I'll link these later for a seperate abotu me page -->
+    <div class="top-nav"> 
         <a href="{% url 'index' %}">Home</a>
         <a href="{% url 'about' %}">About</a>
         <a class="github-link" href="https://github.com/Harley2zazaa/Famous-Food_Finder">Github</a>
@@ -22,7 +22,8 @@
         <h1>Famous Food Finder</h1>
     </div>
 
-    <div class="searchbox-group">
+    <!-- เพิ่มฟอร์มเพื่อให้ผู้ใช้ค้นหาและส่งข้อมูลไปที่ URL ของ search_recipes -->
+    <form action="{% url 'search_recipes' %}" method="GET" class="searchbox-group">
         <svg viewBox="0 0 24 24" aria-hidden="true" class="search-icon">
           <g>
             <path
@@ -36,9 +37,10 @@
           class="input"
           type="search"
           placeholder="What you hunger for?"
-          name="searchbar"
+          name="query"  <!-- แก้เป็นชื่อ 'query' ให้ตรงกับที่ views.py เรียกใช้ -->
         />
-      </div>
+        <button type="submit">Search</button> <!-- เพิ่มปุ่มเพื่อให้ผู้ใช้ส่งข้อมูล -->
+    </form>
 
     <div class="random-box">
         <button class="rand-button"><i>Feeling lucky?</i></button>
