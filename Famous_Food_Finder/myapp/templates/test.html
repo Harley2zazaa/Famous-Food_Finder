@@ -1,0 +1,138 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+
+
+    :root{
+        --side-margin-vertical : 48px;
+        --side-margin-horizontal: calc(48px* 4 );
+    }
+
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .wrapper {
+
+        height: 100vh;
+        background: rgb(43, 35, 35);
+        display: flex;
+        flex-direction: column;
+        padding: var(--side-margin-vertical) var(--side-margin-horizontal);
+
+    }
+
+
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        background: red;
+        height: 60px; 
+        padding: 0 12px;
+        position: fixed; 
+        top: var(--side-margin-vertical); 
+        left: var(--side-margin-horizontal); 
+        right: var(--side-margin-horizontal);
+ 
+    }
+
+    .navbar a {
+        padding: 12px 32px;
+        color: white;
+        text-decoration: none;
+    }
+
+
+
+
+
+    .mainbox {
+        background: forestgreen;
+        margin-top: 108px; 
+        flex: 1;
+        padding: 32px;
+    }
+
+    .mainbox .mainboxleft{
+        width: 35%;
+        height: 100%;
+
+
+        float:left;  
+        border: 1px solid red;
+    }
+
+    .mainbox .mainboxright{
+
+        width: 65%;
+        height: 100%;
+        float:left; 
+        border: 1px solid rgb(86, 35, 227);
+  
+    }
+
+
+
+
+    .searchbox input {
+        padding: 8px;
+        margin-top: 12px;
+    }
+
+    .randombutton {
+        margin-top: 12px;
+        padding: 8px 16px;
+    }
+
+
+</style>
+
+<body>
+    <section class="wrapper">
+
+            <div class="navbar">
+                <a href="test.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="https://github.com/Harley2zazaa/Famous-Food_Finder">Github</a>
+            </div>
+
+            <div class="mainbox">
+                <div class="mainboxleft">
+                    <p>placeholder</p>
+                    <h1>Famous Food Finder</h1>
+                    <p>some more text here</p>
+                
+                    <div class="searchbox">
+                        <input type="text" placeholder="Meow">
+                    </div>
+
+                    <button class="randombutton">
+                        <i>meowmeow</i>
+                    </button>
+                </div>
+
+                <div class="mainboxright">
+                    <p>wawawawawaw</p>
+                </div>
+            </div>
+
+
+    </section>
+
+    
+</body>
+</html>
+
+<!-- thank you thats all :p-->
+```
