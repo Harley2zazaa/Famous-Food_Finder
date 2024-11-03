@@ -2,14 +2,14 @@
     font-family: "Inter", Helvetica, sans-serif;
     font-size: medium;
     background-color:  #ffbf69;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     padding: 0;
     margin: 0;
     width: 100vw;
     height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .top{
     background-color: #ffffff;
@@ -31,6 +31,8 @@
     height: 80px;
     color: #ff9f1c;
     background-color: #ffffff;
+    display: flex;
+    justify-content: center;
     text-align: center;
     border-radius: 15px;
     margin: 5vh;
@@ -53,11 +55,47 @@
     width: 400px;
     height: auto 0;
     padding: 20px;
+    font-size: 35px;
     color: #ff9f1c;
     background-color: #ffffff;
     text-align: center;
-    border-radius: 15px;
+    border-radius: 16px;
     box-shadow: 
     0px 6px 10px 1px peru
 
+}
+.sun{
+    font-size: 17.2px;
+    font-style:oblique;
+    box-shadow: 
+    0px 0px 10px 1px #ff0101;
+    text-shadow: 0 0 2px #8d474788;
+}
+.power{
+    font-size: 17.2px;
+    font-style:oblique;
+    box-shadow: 
+    0px 0px 10px 1px #19e4c2c4;
+    text-shadow: 0 0 2px #6aa781f6;
+}
+.harley{
+    font-size: 16.8px;
+    font-style:oblique;
+    box-shadow: 
+    0px 0px 10px 1px #ff2adcd3;
+    text-shadow: 0 0 2px #e966ae62;
+}
+.beam{
+    font-size: 16.8px;
+    font-style:oblique;
+    box-shadow: 
+    0px 0px 10px 1px #8ee6fc;
+    text-shadow: 0 0 2px #3d3b947c;
+}
+.jean{
+    font-size: 17.2px;
+    font-style:oblique;
+    box-shadow: 
+    0px 0px 10px 1px #7f0fe7f5;
+    text-shadow: 0 0 2px #5785dabb;
 }
