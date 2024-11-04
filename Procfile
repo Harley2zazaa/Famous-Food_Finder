@@ -1,0 +1,1 @@
+web: gunicorn Famous_Food_Finder.wsgi:application --log-file -
