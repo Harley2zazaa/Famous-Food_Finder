@@ -1,1 +1,1 @@
-web: gunicorn Famous_Food_Finder.wsgi:application --log-file -
+web: gunicorn --chdir Famous_Food_Finder Famous_Food_Finder.wsgi:application --log-file -
