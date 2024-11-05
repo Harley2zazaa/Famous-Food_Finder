@@ -1,10 +1,10 @@
-:root{
-    --side-margin-vertical : 48px;
-    --side-margin-horizontal: calc(48px* 4 );
-
+:root {
+    --side-margin-vertical: 48px;
+    --side-margin-horizontal: calc(48px * 4);
     --main-color: #ffbf69;
     --background-color: #fcf6ee;
 }
+
 
 * {
     padding: 0;
@@ -12,8 +12,9 @@
     box-sizing: border-box;
 }
 
+
 .wrapper {
-    height: 100vh;
+    min-height: 100vh;
     background: var(--main-color);
     display: flex;
     flex-direction: column;
@@ -21,103 +22,97 @@
     font-family: "Inter", Arial, Helvetica, sans-serif;
 }
 
-
 .navbar {
     display: flex;
     align-items: center;
     background: var(--background-color);
-    height: 60px; 
+    height: 60px;
     padding: 0 12px;
-    position: fixed; 
-    top: var(--side-margin-vertical); 
-    left: var(--side-margin-horizontal); 
+    position: fixed;
+    top: var(--side-margin-vertical);
+    left: var(--side-margin-horizontal);
     right: var(--side-margin-horizontal);
-
     border-radius: 64px;
-
 }
+
 
 .navbar a {
     padding: 12px 32px;
     text-decoration: none;
     color: black;
-
 }
-
 
 
 .mainbox {
     background: var(--background-color);
-    margin-top: 108px; 
+    margin-top: 108px;
     flex: 1;
     padding: 48px;
     border-radius: 64px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.mainbox .mainboxleft{
-    width: 40%;
-    height: 100%;
-    float:left;  
 
+.mainbox .mainboxleft {
+    width: 40%;
     display: flex;
     justify-content: center;
     flex-direction: column;
-
     position: relative;
 }
 
-.mainbox .mainboxleft .mainboxleft-text{
-    font-size: xx-large;
+
+.mainbox .mainboxleft .mainboxleft-text {
+    font-size: 2rem; 
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
+
 .mainboxleft-text > * {
     margin-top: 16px;
-  }
-
-.mainboxleft-text p {
-   font-size: 0.6em;
-   margin-right: 92px;
 }
 
 
+.mainboxleft-text p {
+    font-size: 0.9rem;
+    margin-right: 92px;
+}
+
 .mainboxleft-text h1 {
-    font-size: 2.6em;
+    font-size: 2.6rem;
     margin-bottom: 16px;
 }
 
 
-
-
-.mainbox .mainboxright{
+.mainbox .mainboxright {
     width: 60%;
-    height: 100%;
-    float: right; 
+    display: flex;
+    justify-content: center;
 }
+
 
 .mainboxright img {
     height: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+    width: auto;
     box-shadow: 
-    0px 4px rgb(248, 246, 244),
-    0px 6px 10px 1px rgb(243, 234, 224);
+        0px 4px rgb(248, 246, 244),
+        0px 6px 10px 1px rgb(243, 234, 224);
 }
 
 
 .randombutton {
     position: absolute;
-    font-size: xx-large;
+    font-size: 2rem;
     bottom: 0;
     transition: all 0.2s ease;
     border: none;
     background: none;
     cursor: pointer;
 }
-  
+
 .randombutton:before {
     content: "";
     position: absolute;
@@ -129,14 +124,13 @@
     height: 45px;
     transition: all 0.3s ease;
 }
-  
+
 .randombutton span {
     position: relative;
     font-size: 0.6em;
-
     letter-spacing: 0.05em;
 }
-  
+
 .randombutton svg {
     position: relative;
     top: 0;
@@ -147,21 +141,20 @@
     stroke: var(--main-color);
     stroke-width: 2;
     transform: translateX(-5px);
-    transition: all 0.3s ease; 
+    transition: all 0.3s ease;
 }
-  
+
 .randombutton:hover:before {
     width: 100%;
 }
-  
+
 .randombutton:hover svg {
     transform: translateX(0);
 }
-  
+
 .randombutton:active {
     transform: scale(0.95);
 }
-  
 
 
 .searchbox {
@@ -170,9 +163,10 @@
     line-height: 28px;
     align-items: center;
     position: relative;
-    max-width: 250px;
+    max-width: 100%;
+    flex-grow: 1;
 }
-  
+
 .input {
     width: 100%;
     height: 40px;
@@ -183,22 +177,21 @@
     border-radius: 8px;
     outline: none;
     transition: 0.3s ease;
-    font-size: large;
-
-    box-shadow: 0px 2px 4px rgba(27, 22, 52, 0.165)
+    font-size: 1rem;
+    box-shadow: 0px 2px 4px rgba(27, 22, 52, 0.165);
 }
-  
+
 .input::placeholder {
     color: #9e9ea7;
 }
-  
+
 .input:focus,
 input:hover {
     outline: none;
     border-color: var(--main-color);
     background-color: #fff;
 }
-  
+
 .icon {
     position: absolute;
     left: 1rem;
@@ -206,4 +199,3 @@ input:hover {
     width: 1rem;
     height: 1rem;
 }
-  
