@@ -1,129 +1,71 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../static/css/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>Famous Food Finder</title>
 </head>
 
 <style>
 
-
-
-    :root{
-        --side-margin-vertical : 48px;
-        --side-margin-horizontal: calc(48px* 4 );
-    }
-
-    * {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-    }
-
-    .wrapper {
-
-        height: 100vh;
-        background: rgb(43, 35, 35);
-        display: flex;
-        flex-direction: column;
-        padding: var(--side-margin-vertical) var(--side-margin-horizontal);
-
-    }
-
-
-
-    .navbar {
-        display: flex;
-        align-items: center;
-        background: red;
-        height: 60px; 
-        padding: 0 12px;
-        position: fixed; 
-        top: var(--side-margin-vertical); 
-        left: var(--side-margin-horizontal); 
-        right: var(--side-margin-horizontal);
- 
-    }
-
-    .navbar a {
-        padding: 12px 32px;
-        color: white;
-        text-decoration: none;
-    }
-
-
-
-
-
-    .mainbox {
-        background: forestgreen;
-        margin-top: 108px; 
-        flex: 1;
-        padding: 32px;
-    }
-
-    .mainbox .mainboxleft{
-        width: 35%;
-        height: 100%;
-
-
-        float:left;  
-        border: 1px solid red;
-    }
-
-    .mainbox .mainboxright{
-
-        width: 65%;
-        height: 100%;
-        float:left; 
-        border: 1px solid rgb(86, 35, 227);
-  
-    }
-
-
-
-
-    .searchbox input {
-        padding: 8px;
-        margin-top: 12px;
-    }
-
-    .randombutton {
-        margin-top: 12px;
-        padding: 8px 16px;
-    }
-
-
 </style>
+
 
 <body>
     <section class="wrapper">
 
             <div class="navbar">
+                <b>
                 <a href="test.html">Home</a>
-                <a href="about.html">About</a>
+                <a href="../templates/about.html">About</a>
                 <a href="https://github.com/Harley2zazaa/Famous-Food_Finder">Github</a>
+                </b>
             </div>
 
             <div class="mainbox">
                 <div class="mainboxleft">
-                    <p>placeholder</p>
-                    <h1>Famous Food Finder</h1>
-                    <p>some more text here</p>
-                
-                    <div class="searchbox">
-                        <input type="text" placeholder="Meow">
+
+                    <div class="mainboxleft-text">
+                        <h1>Famous Food Finder</h1>
+                        <p>
+                            Discover Iconic Dishes from Around the World
+                            One Bite at a Time!
+                        </p>
+
+                        <form action="{% url 'search_recipes' %}" method="GET">
+                    
+                            <div class="searchbox">
+                                <svg viewBox="0 0 24 24" aria-hidden="true" class="icon">
+                                    <g>
+                                      <path
+                                        d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
+                                      </path>
+                                    </g>
+                                  </svg>
+                                <input class="input" type="text" placeholder="Search English Only" name="query" >
+                            </div>
+                        
+                        </form>
                     </div>
 
+
+
                     <button class="randombutton">
-                        <i>meowmeow</i>
-                    </button>
+                        <span>Random Meal?</span>
+                        <svg width="15px" height="10px" viewBox="0 0 13 10">
+                          <path d="M1,5 L11,5"></path>
+                          <polyline points="8 1 12 5 8 9"></polyline>
+                        </svg>
+                      </button>
+                      
                 </div>
 
                 <div class="mainboxright">
-                    <p>wawawawawaw</p>
+                    <img src="../static/images/moew.png" alt="food">
                 </div>
             </div>
 
@@ -135,4 +77,3 @@
 </html>
 
 <!-- thank you thats all :p-->
-```
