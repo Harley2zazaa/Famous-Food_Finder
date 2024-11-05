@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F5B382; /* สีพื้นหลังหลัก */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* กรอบหลักของเนื้อหา */
+.container {
+    background-color: #FAF5EF; /* สีพื้นหลังของเนื้อหา */
+    border-radius: 20px;
+    width: 80%;
+    max-width: 900px;
+    padding: 20px 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* เมนูนำทาง */
+nav {
+    width: 100%;
+    background-color: #FAF5EF;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #E98D58; /* สีเน้นเมื่อชี้เมาส์ */
+}
+
+/* สไตล์ของเนื้อหาในหน้า */
+.content {
+    width: 60%;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: bold;
+    margin: 0;
+    color: #333;
+}
+
+p {
+    font-size: 1.2em;
+    color: #666;
+}
