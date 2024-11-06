@@ -46,3 +46,6 @@ def random_recipes(request):
         recipes = []
 
     return render(request, "search_results.html", {'recipes': recipes})
+
+def about(request):
+    return render(request, 'about.html')
