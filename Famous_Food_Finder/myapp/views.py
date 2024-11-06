@@ -31,7 +31,7 @@ def search_recipes(request):
     return render(request, "search_results.html", {'recipes': recipes})
 
 # ฟังก์ชันสุ่ม recipes จาก API
-def feeling_lucky(request):
+def random_recipes(request):
     api_key = settings.SPOONACULAR_API_KEY  # ดึง API key จาก settings
 
     # เรียก API ของ Spoonacular โดยไม่ระบุ query เพื่อดึงอาหารแบบสุ่ม
@@ -46,3 +46,6 @@ def feeling_lucky(request):
         recipes = []
 
     return render(request, "search_results.html", {'recipes': recipes})
+
+def about(request):
+    return render(request, 'about.html')
