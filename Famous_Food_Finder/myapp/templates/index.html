@@ -50,14 +50,13 @@
 
 
 
-                    <button class="randombutton">
+                    <button class="randombutton" id="randomMealButton">
                         <span>Random Meal?</span>
                         <svg width="15px" height="10px" viewBox="0 0 13 10">
                           <path d="M1,5 L11,5"></path>
                           <polyline points="8 1 12 5 8 9"></polyline>
                         </svg>
-                      </button>
-                      
+                    </button>
                 </div>
 
                 <div class="mainboxright">
@@ -67,6 +66,12 @@
 
 
     </section>
+
+    <script>
+        document.getElementById("randomMealButton").onclick = function() {
+            window.location.href = "{% url 'random_recipes' %}"; // ต้องมั่นใจว่า URL ชื่อนี้อยู่ใน urls.py ของ Django
+        };
+    </script>
 
     
 </body>
