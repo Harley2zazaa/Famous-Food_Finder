@@ -1,15 +1,16 @@
 .body{
     font-family: "Inter", Helvetica, sans-serif;
     font-size: medium;
-    background-color:  #ffbf69;
+    background-color: #ffbf69;
     padding: 0;
     margin: 0;
     width: 100vw;
-    height: auto;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow-x: hidden;
 }
 .top{
     background-color: #ffffff;
@@ -17,15 +18,20 @@
     width: 100vw;
 }
 .top a{
-    float: left;
-    justify-content: center;
     color: #ff9f1c;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
     cursor: pointer;
+    display: inline-block;
+    transition: color 0.3s ease;
 }
+
+.top a:hover {
+    color: #ff6f1c; /* เพิ่มเอฟเฟ็กต์ hover */
+}
+
 .Project{
     width: 400px;
     height: 80px;
@@ -41,7 +47,7 @@
     
 }
 .about{
-    width: 400px;
+    width: 800px;
     height: auto 0;
     padding: 20px;
     color: #ff9f1c;
@@ -62,8 +68,23 @@
     border-radius: 16px;
     box-shadow: 
     0px 6px 10px 1px peru
-
 }
+
+.member-grid {
+    display: grid;
+    grid-template-areas:
+        "member1 member2 member3"
+        " .member4 member5";
+    gap: 20px;
+    justify-items: center;
+    padding-top: 20px;
+}
+.sun { grid-area: member1; }
+.power { grid-area: member2; }
+.harley { grid-area: member3; }
+.beam { grid-area: member4; }
+.jean { grid-area: member5; }
+
 .sun{
     font-size: 17.2px;
     font-style:oblique;
