@@ -58,3 +58,19 @@ p {
     font-size: 1.2em;
     color: #666;
 }
+
+.result-text {
+    display: inline-block; /* ทำให้ข้อความเป็นบล็อกเพื่อให้มีกรอบ */
+    padding: 10px 20px; /* ระยะห่างภายในกรอบ */
+    border: 2px solid white; /* กรอบสีขาว */
+    background-color: #f4a261; /* สีพื้นหลัง */
+    color: #333333; /* สีของข้อความ */
+    font-weight: bold;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+    transition: border-color 0.3s ease; /* ทำให้กรอบเปลี่ยนสีอย่างนุ่มนวล */
+}
+
+.result-text:hover {
+    border-color: yellow; /* เปลี่ยนกรอบเป็นสีเหลืองเมื่อชี้ */
+}
