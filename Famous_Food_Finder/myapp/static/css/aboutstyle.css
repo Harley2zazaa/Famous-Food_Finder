@@ -10,7 +10,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    overflow-x: hidden;
 }
 .top{
     background-color: #ffffff;
@@ -75,9 +74,6 @@
     grid-template-areas:
         "member1 member2 member3"
         " .member4 member5";
-    gap: 20px;
-    justify-items: center;
-    padding-top: 20px;
 }
 .sun { grid-area: member1; }
 .power { grid-area: member2; }
