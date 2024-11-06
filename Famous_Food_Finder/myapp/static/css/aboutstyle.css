@@ -73,7 +73,7 @@
     display: grid;
     grid-template-areas:
         "member1 member2 member3"
-        " .member4 member5";
+        ". member4 member5";
 }
 .sun { grid-area: member1; }
 .power { grid-area: member2; }
