@@ -94,6 +94,9 @@
 .jean { grid-area: member5; }
 
 .sun{
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
     font-size: 17.2px;
     font-style:oblique;
     box-shadow: 
@@ -101,6 +104,9 @@
     text-shadow: 0 0 2px #8d474788;
 }
 .power{
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
     font-size: 17.2px;
     font-style:oblique;
     box-shadow: 
@@ -108,6 +114,9 @@
     text-shadow: 0 0 2px #6aa781f6;
 }
 .harley{
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
     font-size: 16.8px;
     font-style:oblique;
     box-shadow: 
@@ -115,6 +124,9 @@
     text-shadow: 0 0 2px #e966ae62;
 }
 .beam{
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
     font-size: 16.8px;
     font-style:oblique;
     box-shadow: 
@@ -122,6 +134,9 @@
     text-shadow: 0 0 2px #3d3b947c;
 }
 .jean{
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
     font-size: 17.2px;
     font-style:oblique;
     box-shadow: 
