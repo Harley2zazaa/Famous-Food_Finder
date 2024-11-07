@@ -8,5 +8,4 @@ urlpatterns = [ #เพิ่มลิงค์ไปเพิ่ม ต้อ�
     path('about/', views.about, name='about'),  # หน้าข้อมูลเกี่ยวกับ
     path('search/', views.search_recipes, name='search_recipes'),  # หน้า search_recipes
     path('random/', views.random_recipes, name='random_recipes'), #ระบบสุ่ม
-    path('about/', views.about, name='about'),
 ]
