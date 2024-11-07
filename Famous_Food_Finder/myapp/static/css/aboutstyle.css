@@ -69,15 +69,27 @@
     0px 6px 10px 1px peru
 }
 
-.member-grid {
+.member-grid-top {
     display: grid;
-    grid-template-areas:
-        "member1 member2 member3"
-        ". member4 member5";
+    grid-template-areas: "member1 member2 member3";
+    gap: 140px;
+    justify-items: center;
+    padding-top: 20px;
 }
+
 .sun { grid-area: member1; }
 .power { grid-area: member2; }
 .harley { grid-area: member3; }
+
+/* แถวล่าง: สำหรับสมาชิก 2 คน */
+.member-grid-bottom {
+    display: grid;
+    grid-template-areas: ". member4 member5 ."; /* จุด (.) จะเว้นพื้นที่สองข้าง */
+    gap: 165px;
+    justify-items: center;
+    padding-top: 20px;
+}
+
 .beam { grid-area: member4; }
 .jean { grid-area: member5; }
 
