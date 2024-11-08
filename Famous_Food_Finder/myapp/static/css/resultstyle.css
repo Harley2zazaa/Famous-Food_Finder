@@ -67,3 +67,9 @@ body {
     background-color: #ffffff;
     border-radius: 4px;
 }
+
+h1 {
+    font-family: 'Arial', sans-serif; /* เลือกฟอนต์ใหม่ */
+    font-size: 24px; /* ขนาดตัวอักษร */
+    color: #333; /* สีตัวอักษร */
+}
