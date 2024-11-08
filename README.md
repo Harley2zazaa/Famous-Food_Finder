@@ -1,5 +1,8 @@
 # Famous Food Finder
 
+## Preview website
+https://famous-food-finder.onrender.com/
+
 ### How to run website
   1. cd Famous_Food_Finder
   2. python manage.py runserver
