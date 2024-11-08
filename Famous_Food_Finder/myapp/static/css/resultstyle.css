@@ -21,43 +21,11 @@ body {
     align-items: center;
 }
 
-/* เมนูนำทาง */
-nav {
-    width: 100%;
-    background-color: #FAF5EF;
-    padding: 15px 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    font-weight: bold;
-    font-size: 1.2em;
-}
-
-nav a {
-    color: #333;
-    text-decoration: none;
-}
-
-nav a:hover {
-    color: #E98D58; /* สีเน้นเมื่อชี้เมาส์ */
-}
-
 /* สไตล์ของเนื้อหาในหน้า */
 .content {
     width: 60%;
 }
 
-h1 {
-    font-size: 3em;
-    font-weight: bold;
-    margin: 0;
-    color: #333;
-}
-
-p {
-    font-size: 1.2em;
-    color: #666;
-}
 
 .result-text {
     display: inline-block; /* ทำให้ข้อความเป็นบล็อกเพื่อให้มีกรอบ */
@@ -73,4 +41,29 @@ p {
 
 .result-text:hover {
     border-color: yellow; /* เปลี่ยนกรอบเป็นสีเหลืองเมื่อชี้ */
+}
+
+.recipe-container {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+.recipe-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border: 1px solid #ffffff; /* White border for image */
+    padding: 5px;
+    background-color: #ffffff; /* White background for border */
+    border-radius: 4px;
+}
+.recipe-title {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+    border-radius: 4px;
 }
